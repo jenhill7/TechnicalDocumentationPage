@@ -1,0 +1,99 @@
+
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Marck Script', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  
+  
+  nav{
+    background-color: grey;
+    border-right: 2px solid #777;
+    width: 200px;
+    height: 100vh;
+  }
+  
+  nav header{
+    padding: 15px;
+  }
+  
+  nav a {
+   border-top: 1 px solid #777;
+   color: #000;
+   display: block;
+   padding: 15px;  
+  }
+   
+  main{
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  p{
+    order:1;
+    align-self: flex-start, center, flex-end;
+  }
+
+  ul{
+    order:2;
+    justify-content: center;
+  }
+
+  
+  section{
+    padding: 15px;
+    line-height: 1.5;
+  }
+  header {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 15px;
+    color: pink;
+  }
+  
+  @media(max-width: 600px) {
+    body{
+      flex-direction: column;
+    }
+    nav {
+      border-right: none;
+      border-bottom: 2px solid #777;
+      height: 300px;
+      overflow-y: scroll;
+      width: 100%
+    }
+    
+    main{
+      height: auto;
+      width: 100%
+    }
+    
+   /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+}
